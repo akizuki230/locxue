@@ -1,0 +1,81 @@
+<div id="main">
+    <%= image_tag "imagen.png", :alt => "logo", :id => "logo"%>
+
+ <div id="centeredmenu">
+<ul class="sf-menu">
+<li><%=link_to "Inicio", root_path, id: "home", class: "home"%></li>
+<li><%=link_to "proyectos", home_proyectos_path, id: "proyectos", class: "proyectos"%></li>
+<li><%=link_to "Nosotros", home_estatutos_path, id: "Nosotros", class: "Nosotros"%></li>
+<li><%=link_to "Contacto", home_contacto_path, id: "Contacto", class: "Contacto"%></li>
+<li><%=link_to "Blog", home_blog_path, id: "Blog", class: "Blog"%></li>
+<li><%=link_to "Foro", home_foro_path, id: "foro", class: "foro"%></li>
+<li><%=link_to "Actas", home_actas_path, id: "foro", class: "foro"%></li>
+<li><%=link_to "Integrantes", home_integrantes_path, id: "Integrantes", class: "Integrantes"%></li>        
+
+</div>
+</ul>
+<div class="title">
+        <span class="big">Actas, </span> <span class="small">Somos Ágil - Piensa Simple..</span>
+      </div>
+<!-- table -->
+<div class="large-9 columns">
+						<p class="sub-header"></p>
+
+					<table cellspacing="0" cellpadding="0" border="0">				
+						<tbody>
+							<tr>
+								<th>fecha</th>
+								<th>lugar</th>
+								<th>tipo reunión</th>
+								<th>subida por</th>
+								<th>link</th>
+
+							</tr>
+							<tr>
+								<td>Lorem ipsum</td>
+								<td>Lorem ipsum</td>
+								<td>Lorem ipsum</td>
+								<td>Lorem ipsum</td>
+								<th><a><%=link_to "Ver", home_contacto_path, id: "ver", class: "ver"%></a></th>							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+					<!-- ENDS table -->	
+<!-- Sidebar -->
+  <div class="large-3 columns ">
+<!-- sidebar -->
+		
+
+			<ul id="sidebar">
+				<!-- init sidebar -->
+		<h5 class="toggle-trigger custom"><a href="#">Mes</a></h5>
+					<div class="toggle-container">
+						<div class="block">
+						<li class="sidemenu">
+					<ul>
+						<li class="cat-item"><a href="#" title="">Enero</a></li>
+						<li class="cat-item"><a href="#" title="View all posts filed under Design">Febrero</a></li>
+						<li class="cat-item"><a href="#" title="View all posts filed under Design">Marzo</a></li>
+						<li class="cat-item"><a href="#" title="View all posts filed under Design">Abril</a></li>
+						<li class="cat-item"><a href="#" title="View all posts filed under Design">mayo</a></li>
+						<li class="cat-item"><a href="#" title="View all posts filed under Design">junio</a></li>
+						<li class="cat-item"><a href="#" title="View all posts filed under Design">julio</a></li>
+						<li class="cat-item"><a href="#" title="View all posts filed under Design">agosto</a></li>
+						<li class="cat-item"><a href="#" title="View all posts filed under Design">septiembre</a></li>
+						<li class="cat-item"><a href="#" title="View all posts filed under Design">octubre</a></li>
+						<li class="cat-item"><a href="#" title="View all posts filed under Design">noviembre</a></li>
+						<li class="cat-item"><a href="#" title="View all posts filed under Design">diciembre</a></li>
+
+					</ul>
+				</li>	
+						</div>
+					</div>
+				
+			</div>
+				<!-- ENDS init sidebar -->
+
+
+
+
+

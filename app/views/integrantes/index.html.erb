@@ -1,0 +1,43 @@
+<h1>Listing integrantes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Primer apellido</th>
+      <th>Segundo apellido</th>
+      <th>Perfil</th>
+      <th>Twitter</th>
+      <th>Telefono</th>
+      <th>Imagen</th>
+      <th>Widget</th>
+      <th>User</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @integrantes.each do |integrante| %>
+      <tr>
+        <td><%= integrante.nombre %></td>
+        <td><%= integrante.primer_apellido %></td>
+        <td><%= integrante.segundo_apellido %></td>
+        <td><%= integrante.perfil %></td>
+        <td><%= integrante.twitter %></td>
+        <td><%= integrante.telefono %></td>
+        <td><%= integrante.imagen %></td>
+        <td><%= integrante.widget %></td>
+        <td><%= integrante.user_id %></td>
+        <td><%= link_to 'Show', integrante %></td>
+        <td><%= link_to 'Edit', edit_integrante_path(integrante) %></td>
+        <td><%= link_to 'Destroy', integrante, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Integrante', new_integrante_path %>

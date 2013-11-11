@@ -1,0 +1,15 @@
+<%= simple_form_for(@evento) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :titulo %>
+    <%= f.input :lugar %>
+    <%= f.input :fecha %>
+    <%= f.cktext_area :descripcion, rows: 10 %>
+    <%= f.file_field :imagen %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

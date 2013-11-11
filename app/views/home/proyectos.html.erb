@@ -1,0 +1,84 @@
+<div id="main">
+    <%= image_tag "imagen.png", :alt => "logo", :id => "logo"%>
+
+ <div id="centeredmenu">
+<ul class="sf-menu">
+<li><%=link_to "Inicio", root_path, id: "home", class: "home"%></li>
+<li><%=link_to "proyectos", home_proyectos_path, id: "proyectos", class: "proyectos"%></li>
+<li><%=link_to "Nosotros", home_estatutos_path, id: "Nosotros", class: "Nosotros"%></li>
+<li><%=link_to "Contacto", home_contacto_path, id: "Contacto", class: "Contacto"%></li>
+<li><%=link_to "Blog", home_blog_path, id: "Blog", class: "Blog"%></li>
+<li><%=link_to "Foro", home_foro_path, id: "foro", class: "foro"%></li>
+<li><%=link_to "Actas", home_actas_path, id: "foro", class: "foro"%></li>
+<li><%=link_to "Integrantes", home_integrantes_path, id: "Integrantes", class: "Integrantes"%></li>        
+
+</div>
+</ul>
+
+ <!-- Header and Nav -->
+ 
+
+<!-- End Top Bar -->
+
+ <div class="row">
+<div class="large-12 columns">
+<%= image_tag "proyectos.jpg"%> 
+<br><br>
+</div>
+</div>
+
+ 
+<!-- End Navigation -->
+ 
+<div class="row">
+ 
+ <div class="large-8 columns">
+<div class="row">
+ <% @proyecto.each do |proyecto| %>
+<div class="large-4 small- columns">
+<%= image_tag proyecto.imagen%> 
+<div class="panel">
+<h5><%=link_to proyecto.titulo, proyecto%></h5>
+<h6 class="subheader"><%= proyecto.estapa %></h6>
+</div>
+</div>
+<%end%>
+</div>
+ 
+<!-- End Thumbnails -->
+ 
+ 
+
+ 
+</div>
+</div>
+</div>
+ 
+ 
+<!-- Footer -->
+ 
+<footer class="row">
+<div class="large-12 columns"><hr />
+<div class="row">
+ 
+<div class="large-6 columns">
+<p>&copy; Copyright no one at all. Go to town.</p>
+</div>
+ 
+<div class="large-6 columns">
+<ul class="inline-list right">
+<li><a href="#">Link 1</a></li>
+<li><a href="#">Link 2</a></li>
+<li><a href="#">Link 3</a></li>
+<li><a href="#">Link 4</a></li>
+</ul>
+</div>
+ 
+</div>
+</div>
+</footer>
+ 
+<!-- End Footer -->
+ 
+</div>
+</div>

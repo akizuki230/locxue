@@ -13,8 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require ckeditor/init
 //= require foundation
 //= require_tree .
+
 $(function() {
   $(document).foundation();
 });

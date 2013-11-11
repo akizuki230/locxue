@@ -1,0 +1,89 @@
+<div id="main">
+    <%= image_tag "imagen.png", :alt => "logo", :id => "logo"%>
+
+ <div id="centeredmenu">
+<ul class="sf-menu">
+<li><%=link_to "Inicio", root_path, id: "home", class: "home"%></li>
+<li><%=link_to "proyectos", home_proyectos_path, id: "proyectos", class: "proyectos"%></li>
+<li><%=link_to "Nosotros", home_estatutos_path, id: "Nosotros", class: "Nosotros"%></li>
+<li><%=link_to "Contacto", home_contacto_path, id: "Contacto", class: "Contacto"%></li>
+<li><%=link_to "Blog", home_blog_path, id: "Blog", class: "Blog"%></li>
+<li><%=link_to "Foro", home_foro_path, id: "foro", class: "foro"%></li>
+<li><%=link_to "Actas", home_actas_path, id: "foro", class: "foro"%></li>
+<li><%=link_to "Integrantes", home_integrantes_path, id: "Integrantes", class: "Integrantes"%></li>        
+
+</div>
+</ul>
+<div class="title">
+        <span class="big">Contacto, </span> <span class="small">Escribenos..</span>      </div>
+<!-- End Top Bar -->
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+<!-- Contact Details -->
+<div class="large-9 columns">
+<h3>Escribenos</h3>
+<h5>Tienes algo que comentarnos? envia un mensaje y atenderemos tus dudas.</h5>
+
+<section class="section">
+<div class="content" data-slug="panel1">
+<form>
+<div class="row collapse">
+<div class="large-2 columns">
+<label class="inline"><h5>tu nombre</h5></label>
+</div>
+<div class="large-10 columns">
+<input type="text" id="yourName" placeholder="pepito">
+</div>
+</div>
+<div class="row collapse">
+<div class="large-2 columns">
+<label class="inline"> <h5>tu correo</h5></label>
+</div>
+<div class="large-10 columns">
+<input type="text" id="yourEmail" placeholder="pepito@hotmail.com">
+</div>
+</div>
+<label><h5>mensaje</h5></label>
+<textarea rows="4"></textarea>
+<button type="submit" class="radius button">enviar</button>
+</form>
+
+</section>
+
+</div>
+<!-- End Contact Details -->
+<!-- Sidebar -->
+ 
+
+<!-- End Sidebar -->
+</div>
+<h3>¿Donde estamos?</h3>
+<iframe width="700" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=Universidad+de+Cundinamarca,+Fusagasug%C3%A1+-+Cundinamarca,+Colombia&amp;aq=0&amp;oq=universidad+de+cun&amp;sll=37.0625,-95.677068&amp;sspn=42.766543,86.572266&amp;ie=UTF8&amp;hq=Universidad+de+Cundinamarca,+Fusagasug%C3%A1+-+Cundinamarca,+Colombia&amp;t=m&amp;ll=4.334515,-74.369717&amp;spn=0.014977,0.025749&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://www.google.com/maps?f=q&amp;source=embed&amp;hl=es&amp;geocode=&amp;q=Universidad+de+Cundinamarca,+Fusagasug%C3%A1+-+Cundinamarca,+Colombia&amp;aq=0&amp;oq=universidad+de+cun&amp;sll=37.0625,-95.677068&amp;sspn=42.766543,86.572266&amp;ie=UTF8&amp;hq=Universidad+de+Cundinamarca,+Fusagasug%C3%A1+-+Cundinamarca,+Colombia&amp;t=m&amp;ll=4.334515,-74.369717&amp;spn=0.014977,0.025749&amp;z=15&amp;iwloc=A" style="color:#0000FF;text-align:left">Ir a Google Maps</a></small>
+
+<!-- End Main Content and Sidebar -->
+<!-- Footer -->
+<footer class="row">
+<div class="large-12 columns">
+<hr />
+
+<div class="row">
+<div class="large-6 columns">
+<p>&copy; Copyright no one at all. Go to town.</p>
+</div>
+<div class="large-6 columns">
+<ul class="inline-list right">
+<li><a href="#">Link 1</a></li>
+<li><a href="#">Link 2</a></li>
+<li><a href="#">Link 3</a></li>
+<li><a href="#">Link 4</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+<!-- End Footer -->
+<!-- Map Modal -->
+
+<!-- Any anchor with this class will close the modal. This also inherits certain styles, which can be overriden. -->
+
+</div>

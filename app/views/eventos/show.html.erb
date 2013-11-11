@@ -1,0 +1,67 @@
+<p id="notice"><%= notice %></p>
+ 
+<!-- Header and Nav -->
+<div id="main">
+    <%= image_tag "imagen.png", :alt => "logo", :id => "logo"%>
+
+ <div id="centeredmenu">
+<ul class="sf-menu">
+<li><%=link_to "Inicio", root_path, id: "home", class: "home"%></li>
+<li><%=link_to "proyectos", home_proyectos_path, id: "proyectos", class: "proyectos"%></li>
+<li><%=link_to "Nosotros", home_estatutos_path, id: "Nosotros", class: "Nosotros"%></li>
+
+<li><%=link_to "Contacto", home_contacto_path, id: "Contacto", class: "Contacto"%></li>
+<li><%=link_to "Blog", home_blog_path, id: "Blog", class: "Blog"%></li>
+<li><%=link_to "Foro", home_foro_path, id: "foro", class: "foro"%></li>
+<li><%=link_to "Actas", home_actas_path, id: "foro", class: "foro"%></li>
+<li><%=link_to "Integrantes", home_integrantes_path, id: "Integrantes", class: "Integrantes"%></li>        
+
+</div>
+</ul>
+ <div class="title">
+        <span class="big"><%=@evento.titulo%></span> <span class="small"><%=@evento.fecha%></span>
+      </div>
+<!-- End Header and Nav -->
+<div class="row">
+<!-- Main Content Section -->
+<!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
+<div class="large-9 push-3 columns">
+<h3><%=@evento.lugar%></h3>
+<p><%= raw(@evento.descripcion)%></p>
+</div>
+<!-- Nav Sidebar -->
+<!-- This is source ordered to be pulled to the left on larger screens -->
+<div class="large-3 pull-9 columns">
+<ul class="side-nav">
+<p><%=image_tag @evento.imagen %></p>
+
+
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="large-6 small-6 columns">
+<div class="fb-comments" data-href="https://www.locxue.com" data-numposts="5" data-width="600">
+</div>
+</div>
+<!-- Footer -->
+
+<footer class="row">
+<div class="large-12 columns">
+<hr />
+<div class="row">
+<div class="large-6 columns">
+<p>&copy; Copyright no one at all. Go to town.</p>
+</div>
+<div class="large-6 columns">
+<ul class="inline-list right">
+
+<%= link_to 'Edit', edit_evento_path(@evento) %> |
+<%= link_to 'Back', eventos_path %>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+
+

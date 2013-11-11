@@ -1,0 +1,19 @@
+<%= simple_form_for(@integrante) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :nombre %>
+    <%= f.input :primer_apellido %>
+    <%= f.input :segundo_apellido %>
+    <%= f.cktext_area :perfil, rows: 10 %>
+    <%= f.input :twitter %>
+    <%= f.input :telefono %>
+    <%= f.file_field :imagen %>
+    <%= f.input :widget %>
+    <%= f.input :user_id %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

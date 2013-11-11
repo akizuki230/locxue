@@ -1,0 +1,107 @@
+<p id="notice"><%= notice %></p>
+<div id="main">
+    <%= image_tag "imagen.png", :alt => "logo", :id => "logo"%>
+
+ <div id="centeredmenu">
+<ul class="sf-menu">
+<li><%=link_to "Inicio", root_path, id: "home", class: "home"%></li>
+<li><%=link_to "proyectos", home_proyectos_path, id: "proyectos", class: "proyectos"%></li>
+<li><%=link_to "Nosotros", home_estatutos_path, id: "Nosotros", class: "Nosotros"%></li>
+
+<li><%=link_to "Contacto", home_contacto_path, id: "Contacto", class: "Contacto"%></li>
+<li><%=link_to "Blog", home_blog_path, id: "Blog", class: "Blog"%></li>
+<li><%=link_to "Foro", home_foro_path, id: "foro", class: "foro"%></li>
+<li><%=link_to "Actas", home_actas_path, id: "foro", class: "foro"%></li>
+<li><%=link_to "Integrantes", home_integrantes_path, id: "Integrantes", class: "Integrantes"%></li>        
+
+</div>
+</ul>
+ <!-- End Nav -->
+  
+<!-- Main Page Content and Sidebar -->
+ <div class="title">
+        <span class="big">Blog locXue, </span> <span class="small">Somos Ágil - Piensa Simple..</span>
+      </div>
+<div class="row">
+ 
+<!-- Main Blog Content -->
+ 
+
+<div class="large-9 columns" role="content">
+
+<article>
+<div class="post">
+ <p ><a class="post-title"> <%= @articulo.titulo %> </a></p>
+<ul class="meta">
+						<li class="date">Fecha:  <%= @articulo.created_at %></li>
+						
+					</ul>
+ 
+<div class="row">
+<div class="large-6 columns">
+<article><%= raw(@articulo.contenido) %></article>
+
+</div>
+
+</div>
+  
+</article>
+
+  
+</div>
+ 
+<!-- End Main Content -->
+ 
+ 
+<!-- Sidebar -->
+  <div class="large-3 columns ">
+<!-- sidebar -->
+			<ul id="sidebar">
+				<!-- init sidebar -->
+				<li class="sidemenu">
+					<h2 class="custom"><span>CATEGORIAS</span></h2>		
+					<ul>
+						<li class="cat-item"><a href="#" title="">categoria1</a></li>
+						<li class="cat-item"><a href="#" title="View all posts filed under Design">Categoria2</a></li>
+						<li class="cat-item"><a href="#" title="View all posts filed under Design">Categoria3</a></li>
+						<li class="cat-item"><a href="#" title="View all posts filed under Design">Categoria4</a></li>
+					</ul>
+				</li>	
+				<!-- ENDS init sidebar -->
+
+ 
+<div class="panel">
+<h5>Comparte</h5>
+<a class="twitter-timeline"  href="https://twitter.	com/locxue"  data-widget-id="328961318688264192">Tweets por @locxue</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js =d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+ 
+</aside>
+ 
+<!-- End Sidebar -->
+</div>
+ 
+<!-- End Main Content and Sidebar -->
+ 
+ 
+<!-- Footer -->
+ 
+<footer class="row">
+<div class="large-12 columns">
+<hr />
+<div class="row">
+<div class="large-6 columns">
+<p>&copy; Copyright no one at all. Go to town.</p>
+</div>
+<div class="large-6 columns">
+<ul class="inline-list right">
+<%= link_to 'Edit', edit_articulo_path(@articulo) %> |
+<%= link_to 'Back', articulos_path %>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+
+
+

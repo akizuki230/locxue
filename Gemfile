@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '1.9.3'
+ruby '2.0.0'
 gem 'rails', '4.0.0'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
@@ -15,6 +15,8 @@ gem 'rolify'
 gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
 gem 'zurb-foundation'
+gem 'carrierwave'
+gem "ckeditor"
 group :development do
   gem 'guard-bundler'
   gem 'guard-rails'
@@ -32,3 +34,6 @@ group :test do
   gem 'database_cleaner', '1.0.1'
   gem 'email_spec'
 end
+group :deployment  do
+  gem 'pg'
+  end

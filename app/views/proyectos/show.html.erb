@@ -1,0 +1,109 @@
+<p id="notice"><%= notice %></p>
+
+
+<div id="main">
+    <%= image_tag "imagen.png", :alt => "logo", :id => "logo"%>
+
+<!-- End Top Bar -->
+<div class="title">
+        <span class="big"><%= @proyecto.titulo %>, </span> <span class="small">  <%= @proyecto.estapa %></span>
+      </div>
+  <div class="row">
+<div class="large-12 columns">
+<!-- Header Content -->
+<div class="row">
+<div class="large-6 columns">
+<%= image_tag @proyecto.imagen %><br>
+</div>
+<div class="large-6 columns">
+<div class="panel">
+<h4 class="hide-for-small">Descripcion<hr/></h4>
+<h5 class="subheader"> <%= raw(@proyecto.descripcion)%></h5>
+</div>
+<div class="row">
+<div class="large-6 small-6 columns">
+<div class="fb-comments" data-href="https://www.locxue.com" data-numposts="5" data-width="600">
+</div>
+</div>
+<div class="large-6 small-6 columns">
+
+</div>
+</div>
+</div>
+</div>
+<!-- End Header Content -->
+<footer class="row">
+<div class="large-12 columns"><hr />
+<div class="row">
+<div class="large-6 columns">
+<div class="title">
+        <span class="big"> Integrantes del proyecto </span> 
+      </div>
+</div>
+</div>
+</div>
+</footer>
+<!-- End Footer -->
+</div>
+</div>
+
+<!-- End Footer -->
+</div>
+</div>
+
+
+<!-- Thumbnails -->
+<div class="row">
+<div class="large-12 show-for-small columns">
+<h3>Header</h3><hr>
+</div>
+<div class="large-3 small-6 columns">
+<img src="http://placehold.it/500x500&text=Thumbnail">
+<div class="panel">
+<p>nombre</p>
+</div>
+</div>
+<div class="large-3 small-6 columns">
+<img src="http://placehold.it/500x500&text=Thumbnail">
+<div class="panel">
+<p>nombre</p>
+</div>
+</div>
+<div class="large-3 small-6 columns">
+<img src="http://placehold.it/500x500&text=Thumbnail">
+<div class="panel">
+<p>nombre</p>
+</div>
+</div>
+<div class="large-3 small-6 columns">
+<img src="http://placehold.it/500x500&text=Thumbnail">
+<div class="panel">
+<p>nombre</p>
+</div>
+</div>
+</div>
+<!-- End Thumbnails -->
+<!-- Footer -->
+<footer class="row">
+<div class="large-12 columns"><hr />
+<div class="row">
+<div class="large-6 columns">
+<p>&copy; Copyright no one at all. Go to town.</p>
+</div>
+<div class="large-6 columns">
+<ul class="inline-list right">
+<%= link_to 'Edit', edit_proyecto_path(@proyecto) %> |
+<%= link_to 'Back', proyectos_path %>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+<!-- End Footer -->
+</div>
+</div>
+
+
+
+
+

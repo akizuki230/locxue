@@ -1,0 +1,13 @@
+<%= simple_form_for(@articulo) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :titulo %>
+    <%= f.cktext_area :contenido, rows: 10 %>
+    <%= f.input :user_id %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
